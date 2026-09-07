@@ -1,0 +1,34 @@
+# ============ Web 框架 ============
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+
+# ============ 认证 ============
+pyjwt>=2.8
+
+# ============ 数据库 ============
+sqlalchemy>=2.0.25
+pymysql>=1.1   # MySQL driver used by aiomysql
+aiomysql>=0.2   # SQLAlchemy 异步引擎使用的 MySQL 驱动
+cryptography>=42
+
+# ============ 配置与工具 ============
+pydantic>=2.6
+pydantic-settings>=2.0
+python-dotenv>=1.0
+
+# ============ LLM 适配层 ============
+openai>=1.12
+httpx>=0.26
+
+# ============ 文档解析 ============
+pymupdf>=1.23
+python-docx>=1.1
+
+# ============ 语音合成 ============
+edge-tts>=6.1.9
+
+# ============ 任务调度 ============
+apscheduler>=3.10
+# ============ Agent ״̬ͼ ============
+langgraph>=0.2
