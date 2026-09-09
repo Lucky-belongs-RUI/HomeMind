@@ -1,16 +1,16 @@
 # 智能家居大模型体验平台（Smart Home LLM Experience Platform）
 
-将**大模型 Agent 能力**接入智能家居场景的全栈体验平台。用户通过文字或语音与 AI 助理交互，即可完成情感闲聊、知识问答、设备控制（含任务规划与审批）、场景联动和全屋报告生成。后端以 LangGraph 状态图编排「意图识别 → 多链路并发执行」，前端为玻璃拟态风格的 SPA，内置设备模拟器，开箱即可体验完整闭环。
+将**大模型 Agent 能力**接入智能家居场景的全栈体验平台。用户通过文字或语音与 AI 助理交互，即可完成情感闲聊、知识问答、设备控制（含任务规划与审批）、场景联动和全屋报告生成。后端以 LangGraph 状态图编排「意图识别 → 多链路并发执行」，前端为玻璃拟态风格的 SPA，内置设备模拟器，无需真实硬件即可跑通完整流程。
 
 ## 核心功能
 
 - **多意图 Agent**：意图识别优先，按需路由到 情感聊天 / RAG 知识问答 / 设备控制（规划→审批→工具执行）/ 全屋报告 等多条链路，可并发执行
-- **多 LLM 适配**：通义千问（默认）、DeepSeek、智谱 GLM、本地 Ollama、Mock 模式，环境变量一键切换
+- **多 LLM 适配**：通义千问（默认）、DeepSeek、智谱 GLM、本地 Ollama、Mock 模式，环境变量切换
 - **RAG 知识库**：PDF / Word 文档上传 → 文本分块 → 向量化（ChromaDB，缺失时自动回退本地 JSON 检索）→ 检索增强问答
 - **语音交互**：Whisper 语音识别（可选，缺失时返回演示指令）+ Edge-TTS 语音合成
 - **设备模拟与实时推送**：APScheduler 定时模拟设备状态变化，WebSocket 实时推送；设备状态以 MySQL 为唯一数据源
 - **家庭多角色权限**：房主 / 住户 / 访客三级权限矩阵，家庭数据隔离
-- **Docker Compose**：一键启动 MySQL 8.0 + 后端
+- **Docker Compose**：同时启动 MySQL 8.0 与后端
 
 ## 技术栈
 
@@ -37,7 +37,7 @@ ZHJJ/
 │   │   └── config.py           # 配置（环境变量 / .env）
 │   ├── requirements.txt        # 核心依赖
 │   ├── requirements-optional.txt  # 可选增强（LangGraph/ChromaDB/Whisper，缺失自动降级）
-│   ├── docker-compose.yml      # MySQL + 后端一键启动
+│   ├── docker-compose.yml      # MySQL + 后端启动
 │   └── .env.example
 ├── frontend/                   # Vue 3 前端（登录/设备/房间/AI 助理/家庭/数据上传）
 ├── database/init.sql           # 建库 + 建表 + 演示数据
@@ -52,7 +52,7 @@ ZHJJ/
 
 ## 快速开始
 
-### 方式一：Docker Compose 一键启动后端（推荐）
+### 方式一：Docker Compose 启动后端（推荐）
 
 ```bash
 cd backend
