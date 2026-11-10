@@ -1,0 +1,118 @@
+# 参数抽取评测集
+#
+# 直接评测 homemind/agent/rules/plan.py 的 _parse_attributes(text, device_type)，
+# 这是"用户说的话 → 设备要设成什么"的核心转换，错了会导致设备被设成错误状态。
+#
+# expected 只列出必须命中的字段（键与值都要对）。
+# 多抽出的字段不计入失败——那属于"过度解析"，由意图分类用例覆盖。
+
+- id: attr_001
+  input: 把卧室空调调到26度
+  device_type: air_conditioner
+  expected: {temperature: 26}
+
+- id: attr_002
+  input: 帮我把热水器调到50度
+  device_type: water_heater
+  expected: {temperature: 50}
+  note: 回归用例——该分支曾因 elif 顺序错误而永远不可达
+
+- id: attr_003
+  input: 空调调高一点
+  device_type: air_conditioner
+  expected: {temperature: 28}
+
+- id: attr_004
+  input: 空调调低一点
+  device_type: air_conditioner
+  expected: {temperature: 24}
+
+- id: attr_005
+  input: 空调调到制冷模式
+  device_type: air_conditioner
+  expected: {mode: cool}
+
+- id: attr_006
+  input: 空调切到制热
+  device_type: air_conditioner
+  expected: {mode: heat}
+
+- id: attr_007
+  input: 打开空调
+  device_type: air_conditioner
+  expected: {power: "on"}
+
+- id: attr_008
+  input: 关闭客厅的灯
+  device_type: light
+  expected: {power: "off"}
+
+- id: attr_009
+  input: 客厅灯调到30%
+  device_type: light
+  expected: {brightness: 30}
+
+- id: attr_010
+  input: 把灯调亮一点
+  device_type: light
+  expected: {brightness: 100}
+
+- id: attr_011
+  input: 把灯调暗一点
+  device_type: light
+  expected: {brightness: 30}
+
+- id: attr_012
+  input: 把窗帘拉开
+  device_type: curtain
+  expected: {position: 100}
+
+- id: attr_013
+  input: 窗帘拉上
+  device_type: curtain
+  expected: {position: 0}
+
+- id: attr_014
+  input: 打开电视
+  device_type: tv
+  expected: {power: "on"}
+
+- id: attr_015
+  input: 电视调到频道5
+  device_type: tv
+  expected: {channel: 5}
+
+- id: attr_016
+  input: 把音量调到20
+  device_type: speaker
+  expected: {volume: 20}
+
+- id: attr_017
+  input: 门锁上锁
+  device_type: door_lock
+  expected: {locked: true}
+
+- id: attr_018
+  input: 门锁解锁
+  device_type: door_lock
+  expected: {locked: false}
+
+- id: attr_019
+  input: 开始扫地
+  device_type: robot_vacuum
+  expected: {power: "on", status: cleaning}
+
+- id: attr_020
+  input: 扫地机回充
+  device_type: robot_vacuum
+  expected: {power: "off", status: idle}
+
+- id: attr_021
+  input: 打开加湿器
+  device_type: humidifier
+  expected: {power: "on"}
+
+- id: attr_022
+  input: 打开空气净化器
+  device_type: air_purifier
+  expected: {power: "on"}

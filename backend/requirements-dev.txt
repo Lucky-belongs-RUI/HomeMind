@@ -1,0 +1,29 @@
+# ============ LangGraph Studio 本地调试依赖 ============
+# 仅用于 `langgraph dev` 起本地 Agent Server + 打开 Studio 可视化调试图。
+# 生产部署（uvicorn homemind.main:app）不需要这些包。
+#
+# 安装：pip install -r requirements.txt -r requirements-dev.txt
+# 启动：langgraph dev        （在 backend/ 目录，即 langgraph.json 所在处）
+langgraph-cli[inmem]>=0.2
+
+# 可选：开启 LangSmith 云端 tracing，把每次图执行的链路与 LLM 调用上报。
+# 需在 .env 中配置 LANGSMITH_TRACING=true / LANGSMITH_API_KEY / LANGSMITH_PROJECT
+langsmith>=0.3
+
+# ============ 代码质量 ============
+# 规则配置见 backend/pyproject.toml
+ruff>=0.6            # lint + format
+mypy>=1.11           # 静态类型检查
+
+# ============ 测试 ============
+pytest>=8.2
+pytest-asyncio>=0.23   # 异步测试支持
+
+# ============ 数据库迁移 ============
+# 结构变更的版本化管理，取代"启动时跑 ALTER TABLE"的做法。
+# 配置见 alembic.ini，用法见该文件头部注释。
+alembic>=1.13
+
+# ============ 评测（evals/） ============
+# evals/datasets/*.yaml 的解析依赖
+pyyaml>=6.0

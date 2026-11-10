@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-11-02T18:16:59",
+  "environment": "ASGI in-process + SQLite in-memory (single connection)",
+  "iterations": 100,
+  "endpoints": {
+    "health": {
+      "method": "GET",
+      "path": "/",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 0.7,
+      "p50_ms": 0.6,
+      "p95_ms": 1.4,
+      "max_ms": 2.0
+    },
+    "current_user": {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 1.0,
+      "p50_ms": 0.9,
+      "p95_ms": 1.4,
+      "max_ms": 1.9
+    },
+    "rooms": {
+      "method": "GET",
+      "path": "/api/rooms",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 6.4,
+      "p50_ms": 5.7,
+      "p95_ms": 9.8,
+      "max_ms": 14.3
+    },
+    "devices": {
+      "method": "GET",
+      "path": "/api/devices",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 4.7,
+      "p50_ms": 4.4,
+      "p95_ms": 7.6,
+      "max_ms": 9.4
+    },
+    "scenes": {
+      "method": "GET",
+      "path": "/api/scenes",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 5.1,
+      "p50_ms": 5.0,
+      "p95_ms": 7.9,
+      "max_ms": 9.7
+    },
+    "environment": {
+      "method": "GET",
+      "path": "/api/agent/environment",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 5.0,
+      "p50_ms": 4.8,
+      "p95_ms": 6.7,
+      "max_ms": 8.1
+    },
+    "history": {
+      "method": "GET",
+      "path": "/api/agent/history?session_id=bench",
+      "iterations": 100,
+      "errors": 0,
+      "error_rate": 0.0,
+      "count": 100,
+      "mean_ms": 5.1,
+      "p50_ms": 5.0,
+      "p95_ms": 6.7,
+      "max_ms": 7.6
+    }
+  },
+  "concurrent_devices": {
+    "requests": 300,
+    "concurrency": 50,
+    "elapsed_s": 0.987,
+    "rps": 304.1,
+    "errors": 0,
+    "error_rate": 0.0,
+    "count": 300,
+    "mean_ms": 154.6,
+    "p50_ms": 162.4,
+    "p95_ms": 169.1,
+    "max_ms": 171.4
+  }
+}

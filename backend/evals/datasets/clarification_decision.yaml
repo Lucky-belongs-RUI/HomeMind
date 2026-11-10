@@ -1,0 +1,100 @@
+# 澄清决策评测集
+#
+# 评测「系统是否在正确的时候发起澄清询问」。
+# 判定依据与生产代码一致：rule_plan / planner 的 needs_clarification 字段。
+#
+# 两类错误代价不同，评测报告会分开统计：
+#   false_positive —— 该执行却去追问（用户嫌啰嗦）
+#   false_negative —— 该追问却直接执行（可能设错设备，代价更高）
+
+- id: clar_001
+  input: 把卧室空调调到26度
+  expect_clarification: false
+  note: 房间与参数都明确
+
+- id: clar_002
+  input: 把客厅灯关掉
+  expect_clarification: false
+
+- id: clar_003
+  input: 把空调调到20度
+  expect_clarification: true
+  note: 客厅与卧室都有空调，房间不明确，必须追问
+
+- id: clar_004
+  input: 打开空调
+  expect_clarification: true
+  note: 同上，房间不明确
+
+- id: clar_005
+  input: 关闭所有灯
+  expect_clarification: true
+  note: 两个房间都有灯，应确认范围
+
+- id: clar_006
+  input: 帮我调一下
+  expect_clarification: true
+  note: 只有动作没有对象，明确度最低
+
+- id: clar_007
+  input: 我感冒了
+  expect_clarification: false
+  note: 不隐式联动设备，直接回应关怀即可
+
+- id: clar_008
+  input: 我要睡觉了
+  expect_clarification: false
+  note: 明确的睡眠场景指令，可直接触发
+
+- id: clar_009
+  input: 我有点冷
+  expect_clarification: false
+  note: 未明确要求调温，直接关怀
+
+- id: clar_010
+  input: 太吵了
+  expect_clarification: false
+  note: 标准家庭没有窗帘与音箱，无可执行方案，不追问
+
+- id: clar_011
+  input: 打开窗帘
+  expect_clarification: false
+
+- id: clar_012
+  input: 帮我把热水器调到50度
+  expect_clarification: false
+  note: 全屋只有一台热水器，可自动定位房间
+
+- id: clar_013
+  input: 打开空气净化器
+  expect_clarification: false
+  note: 全屋只有一台净化器
+
+- id: clar_014
+  input: 我有点累，陪我聊两句
+  expect_clarification: false
+  note: 纯闲聊不应触发任何澄清
+
+- id: clar_015
+  input: 你好呀
+  expect_clarification: false
+
+- id: clar_016
+  input: 现在几点了
+  expect_clarification: false
+
+- id: clar_017
+  input: 今天天气怎么样
+  expect_clarification: false
+
+- id: clar_018
+  input: 查询客厅温度
+  expect_clarification: false
+
+- id: clar_019
+  input: 客厅有哪些设备
+  expect_clarification: false
+
+- id: clar_020
+  input: 家里对空调温度有什么规定
+  expect_clarification: false

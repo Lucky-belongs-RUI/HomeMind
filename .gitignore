@@ -1,0 +1,34 @@
+# ---------- 环境与密钥（backend/.env 含真实 API Key，请勿提交） ----------
+.env*
+!*.env.example
+
+# ---------- 运行时数据 ----------
+uploads/
+chroma_data/
+
+# ---------- 日志 ----------
+*.log
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- Node ----------
+node_modules/
+dist/
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# ---------- 第三方插件示例资源（非本项目代码） ----------
+plugins/
+.agents/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db

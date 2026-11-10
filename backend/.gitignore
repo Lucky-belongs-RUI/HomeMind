@@ -1,0 +1,16 @@
+# 环境变量与密钥（含 LLM / DashScope API Key）
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 向量库与上传文件
+chroma_data/
+uploads/
+
+# IDE
+.idea/
+.vscode/

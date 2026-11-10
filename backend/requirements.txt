@@ -1,0 +1,51 @@
+# ============ Web 框架 ============
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+
+# ============ 认证 ============
+pyjwt>=2.8
+# 密码哈希：直接使用 bcrypt（passlib 1.7.4 已停止维护，
+# 且依赖 Python 3.13 起移除的 crypt 模块）
+bcrypt>=4.1
+
+# ============ 数据库 ============
+sqlalchemy>=2.0.25
+pymysql>=1.1   # MySQL driver used by aiomysql
+aiomysql>=0.2   # SQLAlchemy 异步引擎使用的 MySQL 驱动
+cryptography>=42
+
+# ============ 配置与工具 ============
+pydantic>=2.6
+pydantic-settings>=2.0
+python-dotenv>=1.0
+
+# ============ LLM 适配层 ============
+openai>=1.12
+httpx>=0.26
+
+# ============ 文档解析 ============
+pymupdf>=1.23
+python-docx>=1.1
+
+# ============ 语音合成 ============
+edge-tts>=6.1.9
+
+# ============ 任务调度 ============
+apscheduler>=3.10
+# ============ LangChain 模型/工具层 ============
+langchain-core>=0.3
+langchain-openai>=0.2
+
+# ============ Agent 状态图（必需） ============
+# 0.6+ 提供 ToolNode / InjectedState / interrupt / Send 等 v2 运行时能力
+langgraph>=0.6
+langgraph-prebuilt>=0.6
+
+# ============ LangGraph 持久化（Postgres checkpointer + Store） ============
+# LangGraph 官方 checkpointer 只有 SQLite / Postgres 两种持久化实现，没有 MySQL 版。
+# 业务库仍为 MySQL，两套存储互不影响：
+#   - AsyncPostgresSaver：澄清 / 审批等中断态的 thread 快照，重启可恢复
+#   - AsyncPostgresStore：跨线程长期记忆（见 homemind/agent/memory.py，当前预留接口）
+langgraph-checkpoint-postgres>=2.0
+psycopg[binary,pool]>=3.1

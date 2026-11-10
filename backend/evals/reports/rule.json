@@ -1,0 +1,130 @@
+{
+  "mode": "rule",
+  "generated_at": "2026-11-02T18:14:43",
+  "results": [
+    {
+      "suite": "intent",
+      "total": 26,
+      "metrics": {
+        "total": 26,
+        "exact_match": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_class": {
+          "chat": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "clarification": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "device_control": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 10
+          },
+          "device_query": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7
+          },
+          "emotional_care": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "knowledge_query": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "report": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "scene_trigger": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          }
+        }
+      },
+      "failures": []
+    },
+    {
+      "suite": "attribute",
+      "total": 22,
+      "metrics": {
+        "total": 22,
+        "field_accuracy": 1.0,
+        "case_exact_match": 1.0,
+        "mismatch_count": 0
+      },
+      "failures": []
+    },
+    {
+      "suite": "clarification",
+      "total": 20,
+      "metrics": {
+        "total": 20,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "failures": []
+    },
+    {
+      "suite": "routing",
+      "total": 14,
+      "metrics": {
+        "total": 14,
+        "exact_match": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_class": {
+          "chat": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 5
+          },
+          "control": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7
+          },
+          "knowledge": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "report": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          }
+        }
+      },
+      "failures": []
+    }
+  ]
+}

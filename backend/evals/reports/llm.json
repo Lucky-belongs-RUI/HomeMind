@@ -1,0 +1,223 @@
+{
+  "mode": "llm",
+  "generated_at": "2026-11-02T18:15:57",
+  "results": [
+    {
+      "suite": "intent",
+      "total": 26,
+      "metrics": {
+        "total": 26,
+        "exact_match": 0.9231,
+        "precision": 0.9615,
+        "recall": 0.9259,
+        "f1": 0.9434,
+        "per_class": {
+          "chat": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "clarification": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "device_control": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9,
+            "support": 10
+          },
+          "device_query": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7
+          },
+          "emotional_care": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "knowledge_query": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "report": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "scene_trigger": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          }
+        }
+      },
+      "failures": [
+        {
+          "id": "intent_023",
+          "input": "我感冒了",
+          "expected": [
+            "device_control",
+            "emotional_care"
+          ],
+          "actual": [
+            "emotional_care"
+          ]
+        },
+        {
+          "id": "intent_025",
+          "input": "帮我调一下",
+          "expected": [
+            "clarification"
+          ],
+          "actual": [
+            "device_control"
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "attribute",
+      "total": 22,
+      "metrics": {
+        "total": 22,
+        "field_accuracy": 1.0,
+        "case_exact_match": 1.0,
+        "mismatch_count": 0
+      },
+      "failures": []
+    },
+    {
+      "suite": "clarification",
+      "total": 20,
+      "metrics": {
+        "total": 20,
+        "accuracy": 0.7,
+        "precision": 1.0,
+        "recall": 0.1429,
+        "false_positives": 0,
+        "false_negatives": 6
+      },
+      "failures": [
+        {
+          "id": "clar_003",
+          "input": "把空调调到20度",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.7,
+          "kind": "该追问却直接执行"
+        },
+        {
+          "id": "clar_004",
+          "input": "打开空调",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.7,
+          "kind": "该追问却直接执行"
+        },
+        {
+          "id": "clar_005",
+          "input": "关闭所有灯",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.95,
+          "kind": "该追问却直接执行"
+        },
+        {
+          "id": "clar_007",
+          "input": "我感冒了",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.95,
+          "kind": "该追问却直接执行"
+        },
+        {
+          "id": "clar_008",
+          "input": "我要睡觉了",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.85,
+          "kind": "该追问却直接执行"
+        },
+        {
+          "id": "clar_009",
+          "input": "我有点冷",
+          "expected": true,
+          "actual": false,
+          "clarity": 0.7,
+          "kind": "该追问却直接执行"
+        }
+      ]
+    },
+    {
+      "suite": "routing",
+      "total": 14,
+      "metrics": {
+        "total": 14,
+        "exact_match": 0.8571,
+        "precision": 0.9333,
+        "recall": 0.875,
+        "f1": 0.9032,
+        "per_class": {
+          "chat": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "support": 5
+          },
+          "control": {
+            "precision": 0.8571,
+            "recall": 0.8571,
+            "f1": 0.8571,
+            "support": 7
+          },
+          "knowledge": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "report": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          }
+        }
+      },
+      "failures": [
+        {
+          "id": "route_011",
+          "input": "我感冒了",
+          "expected": [
+            "chat",
+            "control"
+          ],
+          "actual": [
+            "chat"
+          ]
+        },
+        {
+          "id": "route_014",
+          "input": "帮我调一下",
+          "expected": [
+            "chat"
+          ],
+          "actual": [
+            "control"
+          ]
+        }
+      ]
+    }
+  ]
+}

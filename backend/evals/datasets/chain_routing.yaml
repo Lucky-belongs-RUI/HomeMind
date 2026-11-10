@@ -1,0 +1,71 @@
+# 多链路路由评测集
+#
+# 评测任务规划的分支集合：一次输入应当激活哪几条链路。
+# 这是本项目最核心的架构特征（多链路并发），也是最容易被改坏的地方——
+# 链路集合错了，轻则答非所问，重则漏执行设备操作。
+#
+# expected_chains 取值：chat / knowledge / control / report
+# 比较时按集合比对（顺序不代表语义）。
+
+- id: route_001
+  input: 把卧室空调调到26度
+  expected_chains: [control]
+
+- id: route_002
+  input: 现在几点了
+  expected_chains: [control]
+  note: 时间/天气查询属 device_query，归入设备链路
+
+- id: route_003
+  input: 客厅有哪些设备
+  expected_chains: [control]
+
+- id: route_004
+  input: 家里对空调温度有什么规定
+  expected_chains: [knowledge]
+
+- id: route_005
+  input: 讲解一下用电安全
+  expected_chains: [knowledge]
+
+- id: route_006
+  input: 帮我生成一份家庭情况报告
+  expected_chains: [report]
+
+- id: route_007
+  input: 总结一下家里的情况
+  expected_chains: [report]
+
+- id: route_008
+  input: 我有点累，陪我聊两句
+  expected_chains: [chat]
+
+- id: route_009
+  input: 你好呀
+  expected_chains: [chat]
+
+- id: route_010
+  input: 我要回家了
+  expected_chains: [control]
+  note: 场景触发归入设备链路（scene_trigger）
+
+- id: route_011
+  input: 我感冒了
+  expected_chains: [chat]
+  note: 身体不适只走关怀；未经用户明确要求不得联动设备
+
+- id: route_012
+  input: 好热
+  expected_chains: [chat]
+  note: 同上，隐式不适不触发设备操作
+
+- id: route_013
+  input: 太吵了
+  expected_chains: [chat]
+  note: 未明确要求改变设备，只做交流
+
+- id: route_014
+  input: 帮我调一下
+  expected_chains: [chat]
+  note: 已知限制——clarification 意图类型没有对应链路，回落为 chat；
+        理想行为应是在澄清后重新路由到 control

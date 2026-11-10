@@ -1,0 +1,38 @@
+# Docker 构建上下文排除项
+#
+# Dockerfile 只 COPY requirements*.txt 与 app/，但构建上下文默认会把整个目录
+# 打包发给 docker daemon —— 包括向量库、上传文件、以及 .env。
+# 排除它们既能显著减少上下文传输，也避免密钥被写进构建缓存。
+
+# 环境与密钥（最重要：绝不能进构建上下文）
+.env
+.env.*
+
+# 运行时数据
+chroma_data/
+uploads/
+evals/reports/
+
+# Python 产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 版本控制与编辑器
+.git/
+.gitignore
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# 系统
+.DS_Store
+Thumbs.db

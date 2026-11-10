@@ -1,0 +1,45 @@
+# Ruff 配置（lint + format）
+#
+# 为什么单独一个 ruff.toml 而不是放进 pyproject.toml：
+# backend/langgraph.json 里 `dependencies: ["."]` 会让 langgraph-cli 从本目录的
+# 依赖定义文件安装依赖。一旦出现 pyproject.toml，它就会改从 pyproject 安装——
+# 而本项目的依赖清单在 requirements.txt，两边会打架，`langgraph dev` 直接起不来。
+# 因此工具配置一律用各自独立的配置文件，不引入 pyproject.toml。
+#
+# 使用：
+#   ruff check .            # 检查
+#   ruff check --fix .      # 自动修复
+#   ruff format .           # 格式化
+
+target-version = "py311"
+line-length = 100
+exclude = ["chroma_data", "uploads", "evals/reports", ".venv", "__pycache__"]
+
+[lint]
+# 从务实的最小规则集起步：先保证「明显的错误」被拦住。
+# 风格类规则（如全量 pycodestyle）等存量问题清理完再逐步放开，
+# 否则一次产生上千条告警，结果是没人看、直接关掉。
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes：未使用变量/导入、未定义名称
+    "I",    # isort：导入排序
+    "UP",   # pyupgrade：过时写法
+    "B",    # flake8-bugbear：常见陷阱（可变默认参数、裸 except 等）
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501",    # 行长度交给 formatter 处理
+    "B008",    # FastAPI 的 Depends()/Query() 必须写在默认值位置
+    "SIM108",  # 三元表达式不一定更可读
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["B011"]     # 测试里 assert False 是合法写法
+"evals/runner.py" = ["E402"]   # 评测脚本按需延迟导入，避免加载无关依赖
+
+[lint.isort]
+known-first-party = ["homemind", "evals", "tests"]
+
+[format]
+quote-style = "double"
+indent-style = "space"

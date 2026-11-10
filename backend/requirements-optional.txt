@@ -1,0 +1,6 @@
+# 可选增强依赖（缺失时后端自动降级，不影响核心链路）
+# ChromaDB 向量库：缺失时回退本地 JSON 向量检索
+chromadb>=0.5
+
+# 本地 Whisper 语音识别：缺失时 STT 返回演示指令文本
+openai-whisper>=20231117

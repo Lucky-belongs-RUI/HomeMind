@@ -1,0 +1,11 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "smart_home_agent": {
+      "path": "./homemind/agent/runtime/graph.py:build_agent_graph",
+      "description": "智能家居 Agent：任务规划 + LangGraph Send 并发分支（闲聊 / 知识检索 / 设备控制闭环 / 家庭报告）+ 统一回复"
+    }
+  },
+  "env": "./.env",
+  "python_version": "3.12"
+}

@@ -1,0 +1,124 @@
+# 意图分类评测集
+#
+# 标注的是「系统应当识别出的意图类型集合」（ground truth），不是当前代码的实际输出。
+# 用例失败说明系统行为与预期不符，是评测要暴露的信息。
+#
+# expected_types 由 v2 任务规划结果推导：
+#   device_control / device_query / scene_trigger / knowledge_query
+#   chat / report / clarification
+#
+# 所有用例都在 evals/household.py 定义的标准家庭下运行。
+
+- id: intent_001
+  input: 把卧室空调调到26度
+  expected_types: [device_control]
+  note: 房间与参数都明确，直接执行
+
+- id: intent_002
+  input: 把客厅灯关掉
+  expected_types: [device_control]
+
+- id: intent_003
+  input: 客厅灯调到30%
+  expected_types: [device_control]
+
+- id: intent_004
+  input: 把客厅的灯调暗一点
+  expected_types: [device_control]
+
+- id: intent_005
+  input: 打开窗帘
+  expected_types: [device_control]
+  note: 标准家庭没有窗帘，但意图类型仍应是设备控制
+
+- id: intent_006
+  input: 帮我把热水器调到50度
+  expected_types: [device_control]
+  note: 回归用例——热水器的温度解析分支曾经不可达
+
+- id: intent_007
+  input: 打开空气净化器
+  expected_types: [device_control]
+
+- id: intent_008
+  input: 现在几点了
+  expected_types: [device_query]
+  note: 时间查询走 get_current_time 专用工具，不应识别为闲聊
+
+- id: intent_009
+  input: 今天几号
+  expected_types: [device_query]
+
+- id: intent_010
+  input: 今天天气怎么样
+  expected_types: [device_query]
+  note: 天气查询走 get_weather，不应识别为闲聊
+
+- id: intent_011
+  input: 室外温度多少
+  expected_types: [device_query]
+
+- id: intent_012
+  input: 查询客厅温度
+  expected_types: [device_query]
+
+- id: intent_013
+  input: 家里用电情况怎么样
+  expected_types: [device_query]
+
+- id: intent_014
+  input: 客厅有哪些设备
+  expected_types: [device_query]
+
+- id: intent_015
+  input: 家里对空调温度有什么规定
+  expected_types: [knowledge_query]
+
+- id: intent_016
+  input: 家里的规矩是什么
+  expected_types: [knowledge_query]
+
+- id: intent_017
+  input: 讲解一下用电安全
+  expected_types: [knowledge_query]
+  note: 文档/讲解类问题应触发知识检索，不应落入闲聊
+
+- id: intent_018
+  input: 我要回家了
+  expected_types: [scene_trigger]
+
+- id: intent_019
+  input: 帮我生成一份家庭情况报告
+  expected_types: [report]
+
+- id: intent_020
+  input: 总结一下家里的情况
+  expected_types: [report]
+
+- id: intent_021
+  input: 我有点累，陪我聊两句
+  expected_types: [chat]
+
+- id: intent_022
+  input: 你好呀
+  expected_types: [chat]
+
+- id: intent_023
+  input: 我感冒了
+  expected_types: [chat]
+  note: 身体不适只回应关怀；未经用户明确要求不得联动设备
+
+- id: intent_024
+  input: 太吵了
+  expected_types: [chat]
+  note: 未明确要求改变设备，只做交流；不得凭空执行设备操作
+
+- id: intent_025
+  input: 帮我调一下
+  expected_types: [clarification]
+  note: 只说动作不说对象，应识别为需要澄清
+
+- id: intent_026
+  input: 把空调调到20度
+  expected_types: [device_control]
+  note: 客厅与卧室都有空调，房间不明确但仍属设备控制

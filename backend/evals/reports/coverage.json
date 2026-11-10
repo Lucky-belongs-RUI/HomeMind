@@ -1,0 +1,635 @@
+{
+  "exit_code": 0,
+  "overall": {
+    "executable_lines": 7829,
+    "covered_lines": 4404,
+    "coverage": 0.5625
+  },
+  "files": {
+    "homemind/agent/memory.py": {
+      "executable_lines": 27,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/agent/studio.py": {
+      "executable_lines": 43,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/api/__init__.py": {
+      "executable_lines": 1,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/scheduler/simulators/vacuum_simulator.py": {
+      "executable_lines": 51,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/scheduler/simulators/__init__.py": {
+      "executable_lines": 2,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/agent/tools/__init__.py": {
+      "executable_lines": 1,
+      "covered_lines": 0,
+      "coverage": 0.0
+    },
+    "homemind/agent/nodes/tool_execution.py": {
+      "executable_lines": 91,
+      "covered_lines": 9,
+      "coverage": 0.0989
+    },
+    "homemind/agent/nodes/clarification.py": {
+      "executable_lines": 38,
+      "covered_lines": 5,
+      "coverage": 0.1316
+    },
+    "homemind/agent/nodes/response_generation.py": {
+      "executable_lines": 102,
+      "covered_lines": 15,
+      "coverage": 0.1471
+    },
+    "homemind/agent/rules/planning.py": {
+      "executable_lines": 308,
+      "covered_lines": 55,
+      "coverage": 0.1786
+    },
+    "homemind/voice/stt.py": {
+      "executable_lines": 55,
+      "covered_lines": 10,
+      "coverage": 0.1818
+    },
+    "homemind/agent/nodes/intent_recognition.py": {
+      "executable_lines": 91,
+      "covered_lines": 17,
+      "coverage": 0.1868
+    },
+    "homemind/agent/nodes/rag_retrieval.py": {
+      "executable_lines": 53,
+      "covered_lines": 10,
+      "coverage": 0.1887
+    },
+    "homemind/api/agent.py": {
+      "executable_lines": 537,
+      "covered_lines": 111,
+      "coverage": 0.2067
+    },
+    "homemind/agent/nodes/house_status.py": {
+      "executable_lines": 168,
+      "covered_lines": 35,
+      "coverage": 0.2083
+    },
+    "homemind/services/file_service.py": {
+      "executable_lines": 155,
+      "covered_lines": 34,
+      "coverage": 0.2194
+    },
+    "homemind/scheduler/engine.py": {
+      "executable_lines": 27,
+      "covered_lines": 6,
+      "coverage": 0.2222
+    },
+    "homemind/agent/nodes/chat_generation.py": {
+      "executable_lines": 67,
+      "covered_lines": 15,
+      "coverage": 0.2239
+    },
+    "homemind/llm/qwen_client.py": {
+      "executable_lines": 124,
+      "covered_lines": 28,
+      "coverage": 0.2258
+    },
+    "homemind/voice/tts.py": {
+      "executable_lines": 57,
+      "covered_lines": 13,
+      "coverage": 0.2281
+    },
+    "homemind/agent/nodes/rag_answer.py": {
+      "executable_lines": 43,
+      "covered_lines": 10,
+      "coverage": 0.2326
+    },
+    "homemind/agent/persistence.py": {
+      "executable_lines": 81,
+      "covered_lines": 19,
+      "coverage": 0.2346
+    },
+    "homemind/services/preference_service.py": {
+      "executable_lines": 50,
+      "covered_lines": 12,
+      "coverage": 0.24
+    },
+    "homemind/rag/chunker.py": {
+      "executable_lines": 58,
+      "covered_lines": 14,
+      "coverage": 0.2414
+    },
+    "homemind/rag/vector_store.py": {
+      "executable_lines": 223,
+      "covered_lines": 54,
+      "coverage": 0.2422
+    },
+    "homemind/agent/nodes/report_generation.py": {
+      "executable_lines": 44,
+      "covered_lines": 13,
+      "coverage": 0.2955
+    },
+    "homemind/api/file.py": {
+      "executable_lines": 108,
+      "covered_lines": 32,
+      "coverage": 0.2963
+    },
+    "homemind/llm/dashscope_embedder.py": {
+      "executable_lines": 43,
+      "covered_lines": 14,
+      "coverage": 0.3256
+    },
+    "homemind/llm/structured.py": {
+      "executable_lines": 74,
+      "covered_lines": 25,
+      "coverage": 0.3378
+    },
+    "homemind/services/environment_service.py": {
+      "executable_lines": 124,
+      "covered_lines": 42,
+      "coverage": 0.3387
+    },
+    "homemind/agent/tools/knowledge_tool.py": {
+      "executable_lines": 106,
+      "covered_lines": 37,
+      "coverage": 0.3491
+    },
+    "homemind/llm/factory.py": {
+      "executable_lines": 67,
+      "covered_lines": 25,
+      "coverage": 0.3731
+    },
+    "homemind/llm/factory_errors.py": {
+      "executable_lines": 52,
+      "covered_lines": 20,
+      "coverage": 0.3846
+    },
+    "homemind/agent/nodes/result_aggregation.py": {
+      "executable_lines": 12,
+      "covered_lines": 5,
+      "coverage": 0.4167
+    },
+    "homemind/agent/nodes/task_planning.py": {
+      "executable_lines": 286,
+      "covered_lines": 120,
+      "coverage": 0.4196
+    },
+    "homemind/api/user.py": {
+      "executable_lines": 67,
+      "covered_lines": 33,
+      "coverage": 0.4925
+    },
+    "homemind/__init__.py": {
+      "executable_lines": 2,
+      "covered_lines": 1,
+      "coverage": 0.5
+    },
+    "homemind/core/__init__.py": {
+      "executable_lines": 2,
+      "covered_lines": 1,
+      "coverage": 0.5
+    },
+    "homemind/rag/retriever.py": {
+      "executable_lines": 18,
+      "covered_lines": 9,
+      "coverage": 0.5
+    },
+    "homemind/services/__init__.py": {
+      "executable_lines": 2,
+      "covered_lines": 1,
+      "coverage": 0.5
+    },
+    "homemind/voice/__init__.py": {
+      "executable_lines": 2,
+      "covered_lines": 1,
+      "coverage": 0.5
+    },
+    "homemind/agent/tools/device_tools.py": {
+      "executable_lines": 270,
+      "covered_lines": 140,
+      "coverage": 0.5185
+    },
+    "homemind/websocket/manager.py": {
+      "executable_lines": 46,
+      "covered_lines": 24,
+      "coverage": 0.5217
+    },
+    "homemind/llm/zhipu_client.py": {
+      "executable_lines": 11,
+      "covered_lines": 6,
+      "coverage": 0.5455
+    },
+    "homemind/agent/nodes/_base.py": {
+      "executable_lines": 102,
+      "covered_lines": 57,
+      "coverage": 0.5588
+    },
+    "homemind/agent/__init__.py": {
+      "executable_lines": 12,
+      "covered_lines": 7,
+      "coverage": 0.5833
+    },
+    "homemind/llm/ollama_client.py": {
+      "executable_lines": 12,
+      "covered_lines": 7,
+      "coverage": 0.5833
+    },
+    "homemind/agent/rules/intent.py": {
+      "executable_lines": 607,
+      "covered_lines": 363,
+      "coverage": 0.598
+    },
+    "homemind/llm/deepseek_client.py": {
+      "executable_lines": 15,
+      "covered_lines": 9,
+      "coverage": 0.6
+    },
+    "homemind/rag/embedder.py": {
+      "executable_lines": 5,
+      "covered_lines": 3,
+      "coverage": 0.6
+    },
+    "homemind/main.py": {
+      "executable_lines": 83,
+      "covered_lines": 52,
+      "coverage": 0.6265
+    },
+    "homemind/agent/nodes/task_execution.py": {
+      "executable_lines": 9,
+      "covered_lines": 6,
+      "coverage": 0.6667
+    },
+    "homemind/api/deps.py": {
+      "executable_lines": 71,
+      "covered_lines": 50,
+      "coverage": 0.7042
+    },
+    "homemind/agent/nodes/approval.py": {
+      "executable_lines": 66,
+      "covered_lines": 47,
+      "coverage": 0.7121
+    },
+    "homemind/services/user_service.py": {
+      "executable_lines": 33,
+      "covered_lines": 24,
+      "coverage": 0.7273
+    },
+    "homemind/database.py": {
+      "executable_lines": 30,
+      "covered_lines": 22,
+      "coverage": 0.7333
+    },
+    "homemind/scheduler/__init__.py": {
+      "executable_lines": 4,
+      "covered_lines": 3,
+      "coverage": 0.75
+    },
+    "homemind/websocket/__init__.py": {
+      "executable_lines": 4,
+      "covered_lines": 3,
+      "coverage": 0.75
+    },
+    "homemind/agent/contracts.py": {
+      "executable_lines": 82,
+      "covered_lines": 62,
+      "coverage": 0.7561
+    },
+    "homemind/api/family.py": {
+      "executable_lines": 106,
+      "covered_lines": 81,
+      "coverage": 0.7642
+    },
+    "homemind/repositories/file.py": {
+      "executable_lines": 41,
+      "covered_lines": 32,
+      "coverage": 0.7805
+    },
+    "homemind/llm/__init__.py": {
+      "executable_lines": 5,
+      "covered_lines": 4,
+      "coverage": 0.8
+    },
+    "homemind/rag/__init__.py": {
+      "executable_lines": 5,
+      "covered_lines": 4,
+      "coverage": 0.8
+    },
+    "homemind/services/scene_service.py": {
+      "executable_lines": 156,
+      "covered_lines": 129,
+      "coverage": 0.8269
+    },
+    "homemind/agent/rules/__init__.py": {
+      "executable_lines": 6,
+      "covered_lines": 5,
+      "coverage": 0.8333
+    },
+    "homemind/config.py": {
+      "executable_lines": 75,
+      "covered_lines": 64,
+      "coverage": 0.8533
+    },
+    "homemind/core/handlers.py": {
+      "executable_lines": 41,
+      "covered_lines": 35,
+      "coverage": 0.8537
+    },
+    "homemind/agent/tools/registry.py": {
+      "executable_lines": 51,
+      "covered_lines": 44,
+      "coverage": 0.8627
+    },
+    "homemind/services/password_service.py": {
+      "executable_lines": 30,
+      "covered_lines": 26,
+      "coverage": 0.8667
+    },
+    "homemind/prompts/chat.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/intent.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/knowledge.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/opening.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/preference.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/report.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/prompts/response.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/repositories/base.py": {
+      "executable_lines": 8,
+      "covered_lines": 7,
+      "coverage": 0.875
+    },
+    "homemind/services/rate_limit.py": {
+      "executable_lines": 80,
+      "covered_lines": 70,
+      "coverage": 0.875
+    },
+    "homemind/repositories/family.py": {
+      "executable_lines": 18,
+      "covered_lines": 16,
+      "coverage": 0.8889
+    },
+    "homemind/repositories/preference.py": {
+      "executable_lines": 18,
+      "covered_lines": 16,
+      "coverage": 0.8889
+    },
+    "homemind/services/device_service.py": {
+      "executable_lines": 112,
+      "covered_lines": 101,
+      "coverage": 0.9018
+    },
+    "homemind/services/auth_service.py": {
+      "executable_lines": 130,
+      "covered_lines": 118,
+      "coverage": 0.9077
+    },
+    "homemind/models/__init__.py": {
+      "executable_lines": 11,
+      "covered_lines": 10,
+      "coverage": 0.9091
+    },
+    "homemind/schemas/__init__.py": {
+      "executable_lines": 11,
+      "covered_lines": 10,
+      "coverage": 0.9091
+    },
+    "homemind/repositories/user.py": {
+      "executable_lines": 35,
+      "covered_lines": 32,
+      "coverage": 0.9143
+    },
+    "homemind/agent/state.py": {
+      "executable_lines": 48,
+      "covered_lines": 44,
+      "coverage": 0.9167
+    },
+    "homemind/api/scene.py": {
+      "executable_lines": 48,
+      "covered_lines": 44,
+      "coverage": 0.9167
+    },
+    "homemind/models/preference.py": {
+      "executable_lines": 12,
+      "covered_lines": 11,
+      "coverage": 0.9167
+    },
+    "homemind/prompts/__init__.py": {
+      "executable_lines": 24,
+      "covered_lines": 22,
+      "coverage": 0.9167
+    },
+    "homemind/api/auth.py": {
+      "executable_lines": 51,
+      "covered_lines": 47,
+      "coverage": 0.9216
+    },
+    "homemind/prompts/planning.py": {
+      "executable_lines": 13,
+      "covered_lines": 12,
+      "coverage": 0.9231
+    },
+    "homemind/repositories/__init__.py": {
+      "executable_lines": 13,
+      "covered_lines": 12,
+      "coverage": 0.9231
+    },
+    "homemind/llm/base.py": {
+      "executable_lines": 27,
+      "covered_lines": 25,
+      "coverage": 0.9259
+    },
+    "homemind/schemas/device.py": {
+      "executable_lines": 82,
+      "covered_lines": 76,
+      "coverage": 0.9268
+    },
+    "homemind/repositories/scene.py": {
+      "executable_lines": 42,
+      "covered_lines": 39,
+      "coverage": 0.9286
+    },
+    "homemind/services/room_service.py": {
+      "executable_lines": 84,
+      "covered_lines": 78,
+      "coverage": 0.9286
+    },
+    "homemind/prompts/base.py": {
+      "executable_lines": 15,
+      "covered_lines": 14,
+      "coverage": 0.9333
+    },
+    "homemind/models/family.py": {
+      "executable_lines": 16,
+      "covered_lines": 15,
+      "coverage": 0.9375
+    },
+    "homemind/repositories/room.py": {
+      "executable_lines": 48,
+      "covered_lines": 45,
+      "coverage": 0.9375
+    },
+    "homemind/agent/nodes/__init__.py": {
+      "executable_lines": 16,
+      "covered_lines": 15,
+      "coverage": 0.9375
+    },
+    "homemind/services/family_service.py": {
+      "executable_lines": 100,
+      "covered_lines": 94,
+      "coverage": 0.94
+    },
+    "homemind/models/scene.py": {
+      "executable_lines": 17,
+      "covered_lines": 16,
+      "coverage": 0.9412
+    },
+    "homemind/models/conversation.py": {
+      "executable_lines": 18,
+      "covered_lines": 17,
+      "coverage": 0.9444
+    },
+    "homemind/models/room.py": {
+      "executable_lines": 18,
+      "covered_lines": 17,
+      "coverage": 0.9444
+    },
+    "homemind/models/user.py": {
+      "executable_lines": 18,
+      "covered_lines": 17,
+      "coverage": 0.9444
+    },
+    "homemind/repositories/unit_of_work.py": {
+      "executable_lines": 37,
+      "covered_lines": 35,
+      "coverage": 0.9459
+    },
+    "homemind/schemas/user.py": {
+      "executable_lines": 19,
+      "covered_lines": 18,
+      "coverage": 0.9474
+    },
+    "homemind/models/file.py": {
+      "executable_lines": 21,
+      "covered_lines": 20,
+      "coverage": 0.9524
+    },
+    "homemind/core/exceptions.py": {
+      "executable_lines": 65,
+      "covered_lines": 62,
+      "coverage": 0.9538
+    },
+    "homemind/repositories/conversation.py": {
+      "executable_lines": 45,
+      "covered_lines": 43,
+      "coverage": 0.9556
+    },
+    "homemind/services/conversation_service.py": {
+      "executable_lines": 45,
+      "covered_lines": 43,
+      "coverage": 0.9556
+    },
+    "homemind/repositories/device.py": {
+      "executable_lines": 158,
+      "covered_lines": 151,
+      "coverage": 0.9557
+    },
+    "homemind/schemas/auth.py": {
+      "executable_lines": 23,
+      "covered_lines": 22,
+      "coverage": 0.9565
+    },
+    "homemind/agent/rules/common.py": {
+      "executable_lines": 163,
+      "covered_lines": 156,
+      "coverage": 0.9571
+    },
+    "homemind/api/room.py": {
+      "executable_lines": 48,
+      "covered_lines": 46,
+      "coverage": 0.9583
+    },
+    "homemind/schemas/file.py": {
+      "executable_lines": 24,
+      "covered_lines": 23,
+      "coverage": 0.9583
+    },
+    "homemind/llm/message.py": {
+      "executable_lines": 26,
+      "covered_lines": 25,
+      "coverage": 0.9615
+    },
+    "homemind/agent/graph.py": {
+      "executable_lines": 166,
+      "covered_lines": 160,
+      "coverage": 0.9639
+    },
+    "homemind/schemas/scene.py": {
+      "executable_lines": 30,
+      "covered_lines": 29,
+      "coverage": 0.9667
+    },
+    "homemind/api/device.py": {
+      "executable_lines": 98,
+      "covered_lines": 95,
+      "coverage": 0.9694
+    },
+    "homemind/models/device.py": {
+      "executable_lines": 33,
+      "covered_lines": 32,
+      "coverage": 0.9697
+    },
+    "homemind/schemas/room.py": {
+      "executable_lines": 44,
+      "covered_lines": 43,
+      "coverage": 0.9773
+    },
+    "homemind/schemas/family.py": {
+      "executable_lines": 50,
+      "covered_lines": 49,
+      "coverage": 0.98
+    },
+    "homemind/schemas/agent.py": {
+      "executable_lines": 52,
+      "covered_lines": 51,
+      "coverage": 0.9808
+    },
+    "homemind/schemas/responses.py": {
+      "executable_lines": 53,
+      "covered_lines": 52,
+      "coverage": 0.9811
+    }
+  }
+}

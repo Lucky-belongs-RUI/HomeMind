@@ -1,0 +1,69 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: smart-home-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: smart_home
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # compose 文件位于 backend/ 目录，database/ 在上一级
+      - ../database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  postgres:
+    # LangGraph 持久化专用：checkpointer（中断态）+ Store（长期记忆）
+    # 与业务库 MySQL 相互独立，互不干扰
+    image: postgres:17
+    container_name: smart-home-postgres
+    environment:
+      POSTGRES_USER: langgraph
+      POSTGRES_PASSWORD: langgraph
+      POSTGRES_DB: langgraph
+      TZ: Asia/Shanghai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U langgraph -d langgraph"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    # compose 文件位于 backend/ 目录，构建上下文即当前目录（含 Dockerfile 与 app/）
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MYSQL_URL: mysql+aiomysql://root:root@mysql:3306/smart_home
+      POSTGRES_URL: postgresql://langgraph:langgraph@postgres:5432/langgraph
+      LLM_PROVIDER: qwen
+      QWEN_API_KEY: ${QWEN_API_KEY:-}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+    depends_on:
+      mysql:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      # 相对 compose 文件所在的 backend/ 目录
+      - ./uploads:/app/uploads
+      - ./chroma_data:/app/chroma_data
+
+volumes:
+  mysql_data:
+  postgres_data:
