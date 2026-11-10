@@ -7,8 +7,8 @@
 首次使用请注册一个新家庭；注册后当前账号即为房主，可继续创建住户和访客账号。
 
 <p align="center">
-  <img src="docs/screenshots/01-login.png" alt="注册 / 登录入口" width="46%">
-  <img src="docs/screenshots/03-agent.png" alt="AI 智能助理对话界面" width="52%">
+  <img src="frontend/1.png" alt="注册 / 登录入口" width="46%">
+  <img src="frontend/2.png" alt="AI 智能助理对话界面" width="52%">
 </p>
 
 <p align="center">
