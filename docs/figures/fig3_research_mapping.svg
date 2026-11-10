@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="547.1424pt" height="375.7248pt" viewBox="0 0 547.1424 375.7248" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-03T09:44:49.325151</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 375.7248 
+L 547.1424 375.7248 
+L 547.1424 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.016448 367.7616 
+L 534.125952 367.7616 
+L 534.125952 331.78176 
+L 13.016448 331.78176 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #f3f5f7"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 171.520589 117.06336 
+L 189.97655 117.06336 
+" clip-path="url(#pfd31c1167b)" style="fill: none; stroke: #2f5d8a; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 171.520589 260.4024 
+L 189.97655 260.4024 
+" clip-path="url(#pfd31c1167b)" style="fill: none; stroke: #2f5d8a; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 350.651981 117.06336 
+L 369.107942 97.9128 
+" clip-path="url(#pfd31c1167b)" style="fill: none; stroke: #2f5d8a; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 350.651981 260.4024 
+L 369.107942 199.4688 
+" clip-path="url(#pfd31c1167b)" style="fill: none; stroke: #2f5d8a; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #1f2933" x="273.5712" y="13.448543" transform="rotate(-0 273.5712 13.448543)">两个科研模型 → 系统角色 → LangGraph 落点（修正版）</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 6.2px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #52606d" x="273.5712" y="22.825162" transform="rotate(-0 273.5712 22.825162)">原则：按模型原生输入/输出重定义任务，不把链接预测叫实体链接，不把 KGQA 叫路径检索</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2f5d8a" x="91.725696" y="40.450778" transform="rotate(-0 91.725696 40.450778)">科研模型：原生任务</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2f5d8a" x="273.5712" y="40.47734" transform="rotate(-0 273.5712 40.47734)">重定义后的系统角色</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 6.8px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2f5d8a" x="455.416704" y="40.450778" transform="rotate(-0 455.416704 40.450778)">当前平台落点</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 17.359027 182.0592 
+L 166.092365 182.0592 
+Q 170.434944 182.0592 170.434944 177.41664 
+L 170.434944 56.12976 
+Q 170.434944 51.4872 166.092365 51.4872 
+L 17.359027 51.4872 
+Q 13.016448 51.4872 13.016448 56.12976 
+L 13.016448 177.41664 
+Q 13.016448 182.0592 17.359027 182.0592 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #ffffff; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 17.359027 321.336 
+L 166.092365 321.336 
+Q 170.434944 321.336 170.434944 316.69344 
+L 170.434944 204.11136 
+Q 170.434944 199.4688 166.092365 199.4688 
+L 17.359027 199.4688 
+Q 13.016448 199.4688 13.016448 204.11136 
+L 13.016448 316.69344 
+Q 13.016448 321.336 17.359027 321.336 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #ffffff; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 196.490419 182.0592 
+L 345.223757 182.0592 
+Q 349.566336 182.0592 349.566336 177.41664 
+L 349.566336 56.12976 
+Q 349.566336 51.4872 345.223757 51.4872 
+L 196.490419 51.4872 
+Q 192.14784 51.4872 192.14784 56.12976 
+L 192.14784 177.41664 
+Q 192.14784 182.0592 196.490419 182.0592 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #e8eef5; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 196.490419 321.336 
+L 345.223757 321.336 
+Q 349.566336 321.336 349.566336 316.69344 
+L 349.566336 204.11136 
+Q 349.566336 199.4688 345.223757 199.4688 
+L 196.490419 199.4688 
+Q 192.14784 199.4688 192.14784 204.11136 
+L 192.14784 316.69344 
+Q 192.14784 321.336 196.490419 321.336 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #e8eef5; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 375.621811 141.4368 
+L 529.783373 141.4368 
+Q 534.125952 141.4368 534.125952 136.79424 
+L 534.125952 56.12976 
+Q 534.125952 51.4872 529.783373 51.4872 
+L 375.621811 51.4872 
+Q 371.279232 51.4872 371.279232 56.12976 
+L 371.279232 136.79424 
+Q 371.279232 141.4368 375.621811 141.4368 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #ffffff; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 375.621811 240.0912 
+L 529.783373 240.0912 
+Q 534.125952 240.0912 534.125952 235.44864 
+L 534.125952 154.78416 
+Q 534.125952 150.1416 529.783373 150.1416 
+L 375.621811 150.1416 
+Q 371.279232 150.1416 371.279232 154.78416 
+L 371.279232 235.44864 
+Q 371.279232 240.0912 375.621811 240.0912 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #ffffff; stroke: #1f2933; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 375.621811 321.336 
+L 529.783373 321.336 
+Q 534.125952 321.336 534.125952 316.69344 
+L 534.125952 256.34016 
+Q 534.125952 251.6976 529.783373 251.6976 
+L 375.621811 251.6976 
+Q 371.279232 251.6976 371.279232 256.34016 
+L 371.279232 316.69344 
+Q 371.279232 321.336 375.621811 321.336 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #f7f7f7; stroke: #7b8794; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 6.9px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="342.264638" transform="rotate(-0 19.530317 342.264638)">适配闸门（消融实验）</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="354.759218" transform="rotate(-0 19.530317 354.759218)">A0 当前平台 → A1 +KG_O 排序 → A2 +KG_O 补全 → A3 +GAGR → A4 +PCRL → A5 +TAGA</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 5.9px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #52606d" x="19.530317" y="364.532275" transform="rotate(-0 19.530317 364.532275)">判据：A1 必须降低错房间/错设备率；A3 必须在 2 跳以上问句显著优于 A1；否则删除该模型，不叙事性保留</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 189.97655 117.06336 
+L 185.36256 114.843636 
+L 185.36256 119.283084 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #2f5d8a"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 189.97655 260.4024 
+L 185.36256 258.182676 
+L 185.36256 262.622124 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #2f5d8a"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 369.107942 97.9128 
+L 364.350943 99.755487 
+L 367.243121 102.941149 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #2f5d8a"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 369.107942 199.4688 
+L 365.711232 203.477813 
+L 369.661868 204.845436 
+z
+" clip-path="url(#pfd31c1167b)" style="fill: #2f5d8a"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="18.987494" y="63.389619" transform="rotate(-0 18.987494 63.389619)">KG_O：原生 = 链接预测</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="77.810603" transform="rotate(-0 19.530317 77.810603)">输入：(head, relation) + tail 文本</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="92.608763" transform="rotate(-0 19.530317 92.608763)">输出：全实体排序 / 链接分数</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="107.453798" transform="rotate(-0 19.530317 107.453798)">模块：双塔 Prompt_bert</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="122.205083" transform="rotate(-0 19.530317 122.205083)">· 邻居/路径提示 + 投影 768→64</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="137.12043" transform="rotate(-0 19.530317 137.12043)">· 冻结 GNN + DeepFusion 门控融合</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="151.684215" transform="rotate(-0 19.530317 151.684215)">训练：InfoNCE + 投影 MSE</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="166.576125" transform="rotate(-0 19.530317 166.576125)">注意：不是 mention→实体链接器</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="18.987494" y="211.111063" transform="rotate(-0 18.987494 211.111063)">code-max：原生 = 子图 KGQA</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="225.792203" transform="rotate(-0 19.530317 225.792203)">GAGR：子图 + 问题 → 答案实体分布</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="240.6138" transform="rotate(-0 19.530317 240.6138)">PCRL：问题+路径 → 答案实体对比学习</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="255.341648" transform="rotate(-0 19.530317 255.341648)">TAGA：多跳 QA 数据增强 / 补边</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="270.092933" transform="rotate(-0 19.530317 270.092933)">GNN-RAG：GNN 检索 + LLM 生成</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="19.530317" y="284.984843" transform="rotate(-0 19.530317 284.984843)">注意：GAGR 原生输出不是路径分数</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.118886" y="63.273994" transform="rotate(-0 198.118886 63.273994)">角色 1：关系条件实体排序器</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="77.810603" transform="rotate(-0 198.661709 77.810603)">输入：用户 mention + 意图关系</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="92.585325" transform="rotate(-0 198.661709 92.585325)">候选：HomeKG 内同类型实体</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="107.406923" transform="rotate(-0 198.661709 107.406923)">复用：双塔 / 邻居提示 / GNN 融合</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="122.181645" transform="rotate(-0 198.661709 122.181645)">领域微调：HomeKG 三元组 + 难负例</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="136.979805" transform="rotate(-0 198.661709 136.979805)">附加：缺失关系补全（链接预测原生用法）</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="151.91859" transform="rotate(-0 198.661709 151.91859)">输出：candidate_id + score + margin</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.118886" y="211.226688" transform="rotate(-0 198.118886 211.226688)">角色 2：HomeKG 多跳推理器</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="225.792203" transform="rotate(-0 198.661709 225.792203)">GAGR：在 HomeKG 子图上推理答案实体</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="240.6138" transform="rotate(-0 198.661709 240.6138)">适用：2 跳及以上、答案为实体的问句</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="255.365085" transform="rotate(-0 198.661709 255.365085)">证据路径：由关系注意力回溯（派生）</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="270.163245" transform="rotate(-0 198.661709 270.163245)">PCRL：对候选答案/路径重排</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="284.91453" transform="rotate(-0 198.661709 284.91453)">TAGA：合成多跳训练与评测数据</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="198.661709" y="299.90019" transform="rotate(-0 198.661709 299.90019)">输出：answer_entities + evidence_paths</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.250278" y="63.08415" transform="rotate(-0 377.250278 63.08415)">控制 / 查询链路</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="77.64654" transform="rotate(-0 377.793101 77.64654)">intent → entity_resolution(KG_O)</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="91.8822" transform="rotate(-0 377.793101 91.8822)">→ task_planning → approval → tools</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="107.383485" transform="rotate(-0 377.793101 107.383485)">歧义候选 → 澄清选项（带分数）</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="122.205083" transform="rotate(-0 377.793101 122.205083)">低置信 / 超时 → 规则或 LLM 回退</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.250278" y="161.710425" transform="rotate(-0 377.250278 161.710425)">知识 / 报告链路</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="176.39469" transform="rotate(-0 377.793101 176.39469)">doc RAG + KG 多跳检索(GAGR)</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="191.333475" transform="rotate(-0 377.793101 191.333475)">Qwen 融合文档片段与 evidence_paths</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="206.17851" transform="rotate(-0 377.793101 206.17851)">路径作为可解释证据，不替代生成</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="220.78917" transform="rotate(-0 377.793101 220.78917)">报告：补齐全屋结构关系</text>
+   </g>
+   <g id="text_47">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.250278" y="263.3508" transform="rotate(-0 377.250278 263.3508)">明确不做</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="277.927253" transform="rotate(-0 377.793101 277.927253)">不让小模型替代 Qwen 生成</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="292.819163" transform="rotate(-0 377.793101 292.819163)">不让 GAGR 直接输出路径分数</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 6px; font-family: 'SimHei', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1f2933" x="377.793101" y="307.617323" transform="rotate(-0 377.793101 307.617323)">不在缺 HomeKG 时强行接入</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfd31c1167b">
+   <rect x="2.16" y="2.16" width="542.8224" height="371.4048"/>
+  </clipPath>
+ </defs>
+</svg>
