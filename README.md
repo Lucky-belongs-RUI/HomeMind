@@ -1,6 +1,5 @@
 # HomeMind・智能家居大模型体验平台
 
-> 
 > 把大模型 Agent 接入真实家居场景：一句话完成设备控制、场景联动、知识问答与全屋报告。
 
 体验地址：**[http://39.106.179.22/login](http://39.106.179.22/login)**
@@ -18,7 +17,7 @@
 <p align="center">
 <sub>图2：AI 智能助理对话界面（多意图对话、设备控制、家庭报告）</sub>
 </p>
----
+
 
 ## 项目简介
 
@@ -34,8 +33,6 @@ HomeMind 是一个面向智能家居场景的全栈大模型应用。用户通�
 
 后端基于 **FastAPI + LangGraph** 编排状态图；前端采用 **Vue 3 + Vite** 构建玻璃拟态风格单页应用，内置设备模拟器，无需真实硬件即可跑通完整业务流程。
 
----
-
 ## 核心能力
 
 ### 1. 多意图 Agent
@@ -43,7 +40,6 @@ HomeMind 是一个面向智能家居场景的全栈大模型应用。用户通�
 单轮用户输入可拆解为多个子任务并发执行。
 示例用户指令：
 
-> 
 > “我感冒了，把卧室空调调到 26 度，顺便看看药箱里有什么药。”
 
 系统自动拆分为三条独立任务分支：
@@ -91,18 +87,8 @@ context → plan → validate → approval → dispatch → execute → observe 
 - 检索结果按 `user_id / family_id` 过滤，避免跨家庭泄露；
 - 回复附带来源引用。
 
-### 6. 个人模型配置
 
-模型配置不再硬编码在 `.env` 中，支持用户自主配置多后端：
-
-- 阿里云通义千问
-- DeepSeek
-- 智谱 GLM
-- 本地 Ollama
-
-支持新增、编辑、删除模型配置；API Key 在服务端使用 Fernet 加密存储，接口不返回明文密钥。模型下拉框仅展示当前用户自己配置的模型，未配置模型时禁止发送对话消息。
-
-### 7. 上下文与可靠性
+### 6. 上下文与可靠性
 
 - 会话缓存：保留最近 6 轮原始对话，更早历史采用两级压缩策略；
 - 状态持久化：Postgres checkpointer 持久化 LangGraph 中断状态，Postgres 不可用时降级为 MemorySaver；
@@ -111,7 +97,6 @@ context → plan → validate → approval → dispatch → execute → observe 
 - 流式输出：支持 SSE / WebSocket 流式返回；
 - 安全护栏：输入护栏、输出护栏、AI 生成标识。
 
----
 
 ## 技术栈
 
@@ -127,8 +112,6 @@ context → plan → validate → approval → dispatch → execute → observe 
 | 实时通信 | WebSocket · SSE |
 | 语音（可选） | Whisper · Edge-TTS |
 | 任务调度 | APScheduler（扫地机设备模拟） |
-
----
 
 
 ## 快速开始
